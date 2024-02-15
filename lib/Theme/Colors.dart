@@ -5,6 +5,7 @@ const darkBlueColor = Color.fromRGBO(102, 187, 251, 1);
 const blackColor = Color.fromRGBO(51, 51, 51, 1);
 const whiteColor = Color.fromRGBO(255, 255, 255, 1);
 const lightGrayColor = Color.fromRGBO(195, 195, 195, 1);
+const darkGreyColor = Color.fromRGBO(217,217, 217, 1);
 const brownColor = Color.fromRGBO(159, 37, 36, 1); 
 
 const lightBlue20Color = Color.fromRGBO(163, 216, 255, 0.2);
