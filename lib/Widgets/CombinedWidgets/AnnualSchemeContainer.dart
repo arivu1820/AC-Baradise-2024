@@ -14,7 +14,7 @@ class AnnualSchemeContainer extends StatelessWidget {
       height: 100,
       width: double.infinity,
       margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
-      padding: const EdgeInsets.only(left: 20, top: 0, bottom: 10, right: 10),
+      padding: const EdgeInsets.only(left: 20, top: 0, bottom: 5, right: 10),
       decoration: BoxDecoration(
         color: whiteColor,
         borderRadius: BorderRadius.circular(10),
