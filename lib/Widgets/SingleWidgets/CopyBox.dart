@@ -16,7 +16,7 @@ class CopyBox extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(5.0),
             border: Border.all(
-              color: lightGray8Color,
+              color: lightGray80Color,
               width: 1.0,
             ),
           ),
@@ -37,7 +37,7 @@ class CopyBox extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.only(left: 10,right: 10),
                     height: 40,
-                    decoration: BoxDecoration(color: lightGray8Color),
+                    decoration: BoxDecoration(color: lightGray80Color),
                     child: Row(
                       children: [
                         Image.asset(
