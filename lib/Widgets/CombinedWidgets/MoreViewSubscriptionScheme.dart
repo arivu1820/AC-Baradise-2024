@@ -115,30 +115,32 @@ class MoreViewSubscriptionScheme extends StatelessWidget {
               width: double.infinity,
               child: DottedLine(),
             ),
-            Container(
-              margin: EdgeInsets.only(left: 10, top: 20),
-              child: Row(
-                children: [
-                  Text(
-                    "To discover the advantages of this scheme ",
-                    style: TextStyle(
-                      color: blackColor,
-                      fontFamily: "OxygenLight",
-                      fontSize: 14,
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Text(
-                      "Click Here",
+            FittedBox(
+              child: Container(
+                margin: EdgeInsets.only(left: 10, top: 20),
+                child: Row(
+                  children: [
+                    Text(
+                      "To discover the advantages of this scheme ",
                       style: TextStyle(
-                        color: darkBlueColor,
+                        color: blackColor,
                         fontFamily: "OxygenLight",
                         fontSize: 14,
                       ),
                     ),
-                  )
-                ],
+                    GestureDetector(
+                      onTap: () {},
+                      child: Text(
+                        "Click Here",
+                        style: TextStyle(
+                          color: darkBlueColor,
+                          fontFamily: "OxygenLight",
+                          fontSize: 14,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             SizedBox(

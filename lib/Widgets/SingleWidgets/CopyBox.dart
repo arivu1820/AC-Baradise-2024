@@ -41,7 +41,7 @@ class CopyBox extends StatelessWidget {
                     child: Row(
                       children: [
                         Image.asset(
-                          "Assets/Icons/Group 88.png",
+                          "Assets/Icons/Group_88.png",
                           height: 15,
                           width: 12,
                         ),
