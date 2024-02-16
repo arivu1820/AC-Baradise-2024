@@ -21,6 +21,7 @@ const black60Color = Color.fromRGBO(51, 51, 51, 0.6);
 const black90Color = Color.fromRGBO(51, 51, 51, 0.9);
 
 const lightGray25Color = Color.fromRGBO(236, 236, 236, .25);
+const lightGray50Color = Color.fromRGBO(236, 236, 236, .5);
 
 const darkGrey50Color = Color.fromRGBO(217,217, 217, .5);
 
