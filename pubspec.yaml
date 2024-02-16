@@ -72,6 +72,9 @@ flutter:
     - Assets/Icons/Back_Arrow_icon.png
     - Assets/Icons/Cash_on_delivery_icon.png
     - Assets/Icons/Payment_method_icon.png
+    - Assets/Icons/Arrow 2.png
+    - Assets/Icons/Group 81.png
+    - Assets/Icons/Group 88.png
     - Assets/Icons/My_Cart_Icon.png
   #   - images/a_dot_ham.jpeg
 

@@ -7,6 +7,7 @@ const whiteColor = Color.fromRGBO(255, 255, 255, 1);
 const lightGrayColor = Color.fromRGBO(195, 195, 195, 1);
 const darkGreyColor = Color.fromRGBO(217,217, 217, 1);
 const brownColor = Color.fromRGBO(159, 37, 36, 1); 
+const leghtGreen = Color.fromRGBO(69, 201, 165, 1); 
 
 const lightBlue20Color = Color.fromRGBO(163, 216, 255, 0.2);
 const lightBlue25Color = Color.fromRGBO(163, 216, 255, 0.25);
@@ -21,6 +22,7 @@ const black60Color = Color.fromRGBO(51, 51, 51, 0.6);
 const black90Color = Color.fromRGBO(51, 51, 51, 0.9);
 
 const lightGray25Color = Color.fromRGBO(236, 236, 236, .25);
+const lightGray8Color = Color.fromRGBO(236, 236, 236, .8);
 const lightGray50Color = Color.fromRGBO(236, 236, 236, .5);
 
 const darkGrey50Color = Color.fromRGBO(217,217, 217, .5);
