@@ -1,6 +1,7 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CopyBox.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/DottedLine.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/SerciceCount.dart';
 import 'package:flutter/material.dart';
 
 class MoreViewSubscriptionScheme extends StatelessWidget {
@@ -24,93 +25,32 @@ class MoreViewSubscriptionScheme extends StatelessWidget {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                    child: Text(
-                  "1st Service",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                )),
-                Container(
-                    width: 20,
-                    height: 20,
-                    child: Image.asset("Assets/Icons/Group 81.png")),
-              ],
+            ServiceCount(
+              serviceName: "1sr Service",
             ),
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Expanded(
-                    child: Text(
-                  "2nd Service",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                )),
-                Container(
-                    width: 20,
-                    height: 20,
-                    child: Image.asset("Assets/Icons/Group 81.png"))
-              ],
+            ServiceCount(
+              serviceName: "2nd Service",
             ),
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Expanded(
-                    child: Text(
-                  "3rd Service",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                )),
-                Text(
-                  "oct 2023",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                ),
-              ],
+            ServiceCount(
+              serviceName: "3rd Service",showImage: false, date: "Oct 2023"
             ),
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Expanded(
-                    child: Text(
-                  "4th Service",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                )),
-                Text(
-                  "Jan 2024",
-                  style: TextStyle(
-                    color: blackColor,
-                    fontFamily: "OxygenLight",
-                    fontSize: 14,
-                  ),
-                ),
-              ],
+            ServiceCount(
+              serviceName: "4th Service",showImage: false, date: "Jan 2024"
+            ),
+            SizedBox(
+              height: 10,
             ),
             Container(
-              margin: EdgeInsets.only(right: 10, top: 20),
+              margin: EdgeInsets.only(right: 0, top: 10),
               height: 1,
               width: double.infinity,
               child: DottedLine(),
@@ -155,7 +95,3 @@ class MoreViewSubscriptionScheme extends StatelessWidget {
 }
 
 
-/*
-TO DO:
-  1. write condition for the Date and Tick Simble
- */

@@ -42,7 +42,9 @@ class AnnualSchemeContainer extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 50,),
+              const SizedBox(
+                width: 50,
+              ),
               const Text(
                 "23 %",
                 maxLines: 1,
@@ -55,41 +57,42 @@ class AnnualSchemeContainer extends StatelessWidget {
               )
             ],
           ),
-          const SizedBox(height: 5,),
+          const SizedBox(
+            height: 5,
+          ),
           Row(
             children: [
               Expanded(
-                child: RichText(
-  maxLines: 2,
-  overflow: TextOverflow.ellipsis,
-  text: TextSpan(
-    style: const TextStyle(
-      fontFamily: "OxygenBold",
-      fontSize: 12,
-      color: black60Color,
-    ),
-    children: [
-      const TextSpan(
-        text: "Voltas 183V Vectra Platina 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper. Platina 4 in 1 Conv",
-      ),
-      TextSpan(
-        text: "More",
-        style: const TextStyle(
-          fontWeight: FontWeight.bold,
-          color: darkBlueColor, // Replace with your desired bold color
-        ),
-        recognizer: TapGestureRecognizer()
-          ..onTap = () {
-            // Add your onTap functionality here
-            print("Second part clicked!");
-          },
-      ),
-    ],
-  ),
-)
-
-              ),
-              
+                  child: RichText(
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                text: TextSpan(
+                  style: const TextStyle(
+                    fontFamily: "OxygenBold",
+                    fontSize: 12,
+                    color: black60Color,
+                  ),
+                  children: [
+                    const TextSpan(
+                      text:
+                          "Voltas 183V Vectra Platina 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper. Platina 4 in 1 Conv",
+                    ),
+                    TextSpan(
+                      text: "More",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color:
+                            darkBlueColor, // Replace with your desired bold color
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          // Add your onTap functionality here
+                          print("Second part clicked!");
+                        },
+                    ),
+                  ],
+                ),
+              )),
               const SizedBox(
                 width: 10,
               ),
