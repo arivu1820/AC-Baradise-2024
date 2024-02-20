@@ -15,6 +15,7 @@ const lightBlue30Color = Color.fromRGBO(163, 216, 255, 0.3);
 const lightBlue50Color = Color.fromRGBO(163, 216, 255, 0.5);
 const lightBlue75Color = Color.fromRGBO(163, 216, 255, 0.75);
 
+const darkBlue10Color = Color.fromRGBO(102, 187, 251, .1);
 const darkBlue25Color = Color.fromRGBO(102, 187, 251, .25);
 const darkBlue50Color = Color.fromRGBO(102, 187, 251, .5);
 
@@ -27,6 +28,8 @@ const lightGray80Color = Color.fromRGBO(236, 236, 236, .8);
 const lightGray50Color = Color.fromRGBO(236, 236, 236, .5);
 
 const darkGrey50Color = Color.fromRGBO(217,217, 217, .5);
+
+
 
 const Dark2ligthblueLRgradient = LinearGradient(
   begin: Alignment.bottomLeft,

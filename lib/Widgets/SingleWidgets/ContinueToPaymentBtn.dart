@@ -9,7 +9,7 @@ class ContinueToPayment extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
       border: Border(
-        top: BorderSide(width: 0.5, color: lightGrayColor),
+        top: BorderSide(width: 0.5, color: lightBlueColor),
       ),
       color: whiteColor,
     ),

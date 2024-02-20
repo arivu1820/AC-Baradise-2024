@@ -118,6 +118,20 @@ flutter:
     - family: LexendMedium
       fonts:
         - asset: Fonts/Lexend/Lexend-Medium.ttf
+
+    - family: LexendBold
+      fonts:
+        - asset: Fonts/Lexend/Lexend-Bold.ttf
+
+    - family: LexendLight
+      fonts:
+        - asset: Fonts/Lexend/Lexend-Light.ttf
+    
+    - family: CookieRegular
+      fonts:
+        - asset: Fonts/Cookie/Cookie-Regular.ttf
+
+        
           
   #
   # For details regarding fonts from package dependencies,

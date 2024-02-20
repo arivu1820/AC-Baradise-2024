@@ -15,6 +15,7 @@ class CostContainer extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           boxShadow: [
+      
             BoxShadow(
               color: darkBlue50Color,
               offset: Offset(0, 0),
