@@ -1,5 +1,6 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CardAddBtn.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/OrderPrice.dart';
 import 'package:flutter/material.dart';
 
 class CartProductContainer extends StatelessWidget {
@@ -38,9 +39,7 @@ class CartProductContainer extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-         
-             CartAddBtn(),
-   
+          OrderPrice(),
         ],
       ),
     );

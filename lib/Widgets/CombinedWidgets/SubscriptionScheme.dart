@@ -1,25 +1,36 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
+import 'package:acbaradise_2024/Widgets/CombinedWidgets/MoreViewSubscriptionScheme.dart';
 import 'package:flutter/material.dart';
 
-class SubscriptionScheme extends StatelessWidget {
-  const SubscriptionScheme({Key? key});
+class SubscriptionScheme extends StatefulWidget {
+  const SubscriptionScheme({Key? key}) : super(key: key);
+
+  @override
+  _SubscriptionSchemeState createState() => _SubscriptionSchemeState();
+}
+
+class _SubscriptionSchemeState extends State<SubscriptionScheme> {
+  bool _isExpanded = false;
+  
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        height: 100,
-        width: double.infinity,
-        margin: EdgeInsets.only(top: 10, left: 20, right: 20),
-        padding: EdgeInsets.only(top: 20, left: 20, right: 20),
-        decoration: BoxDecoration(
-          color: whiteColor,
-          borderRadius: BorderRadius.circular(5),
-          border: Border.all(
-            color: lightBlue75Color,
-            width: 1,
-          ),
+    return AnimatedContainer(
+      duration: Duration(seconds: 0
+      ),
+      height: _isExpanded ? 665 : 100,
+      width: double.infinity,
+      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+      padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+      decoration: BoxDecoration(
+        color: whiteColor,
+        borderRadius: BorderRadius.circular(5),
+        border: Border.all(
+          color: lightBlue75Color,
+          width: 1,
         ),
+      ),
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Row(
@@ -69,35 +80,39 @@ class SubscriptionScheme extends StatelessWidget {
                     width: 10,
                   ),
                 ),
-                Text(
-                  "1 annu",
-                  style: TextStyle(
-                    color: leghtGreen,
-                    fontFamily: "OxygenRegular",
-                    fontSize: 14,
-                  ),
-                ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      _isExpanded = !_isExpanded;
+                    });
+                    // Show message based on _isExpanded state
+                  },
                   icon: Container(
-                    
-                    
-                    width: 10,
-                    height: 20,
+                    width: 20,
+                    height: 10,
                     child: Image.asset(
-                      "Assets/Icons/Arrow 2.png",
+                      _isExpanded
+                          ? "Assets/Icons/2_Arrow.png"
+                          : "Assets/Icons/Arrow_2.png",
                     ),
                   ),
                 ),
               ],
             ),
+            // Conditionally display additional content based on _isExpanded
+            if (_isExpanded)
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Column(
+                  children: [
+                    MoreViewSubscriptionScheme(),
+                    MoreViewSubscriptionScheme()
+                  ],
+                ),
+              ),
           ],
         ),
       ),
     );
   }
 }
-/*
-TO DO:
-  1. Position of arrow is placed 
- */

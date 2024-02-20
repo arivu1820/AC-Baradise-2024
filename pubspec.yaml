@@ -73,10 +73,15 @@ flutter:
     - Assets/Icons/Back_Arrow_icon.png
     - Assets/Icons/Cash_on_delivery_icon.png
     - Assets/Icons/Payment_method_icon.png
-    - Assets/Icons/Arrow 2.png
+    - Assets/Icons/2_Arrow.png
+    - Assets/Icons/Arrow_2.png
     - Assets/Icons/Group 81.png
     - Assets/Icons/Group_88.png
-    - Assets/Icons/My_Cart_Icon.png
+    - Assets/Icons/My_Cart_Icon.png 
+    - Assets/Icons/Fulfilled.png
+    - Assets/Icons/Frame_103.png
+    - Assets/Icons/Group_82.png
+    - Assets/Icons/image_31.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
