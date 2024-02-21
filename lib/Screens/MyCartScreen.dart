@@ -14,7 +14,6 @@ class MyCartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: whiteColor,
         appBar: AppBar(
           title: Text(
             "My Cart",
@@ -46,9 +45,9 @@ class MyCartScreen extends StatelessWidget {
               child: Column(
                 children: [
                   MyCartBanner(),
-                  ProductsInCart(),
-                  ServicesInCart(),
-                  AMCInCart(),
+                  ProductsInCart(isQtyReq:false),
+                  ServicesInCart(isQtyReq: false,),
+                  AMCInCart(isQtyReq:false),
                   Container(
                     height: 10,
                     color: lightGray50Color,

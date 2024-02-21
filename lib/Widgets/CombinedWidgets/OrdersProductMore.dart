@@ -15,10 +15,12 @@ class OrdersProductMore extends StatelessWidget {
         color: darkBlue25Color,
         child: Column(
           children: [
-            
-              Container(height: 1,width: double.infinity,color: lightGrayColor,margin: EdgeInsets.fromLTRB(30, 20, 30, 30),)
-             ,
-          
+            Container(
+              height: 1,
+              width: double.infinity,
+              color: lightGrayColor,
+              margin: EdgeInsets.fromLTRB(30, 20, 30, 30),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -70,3 +72,6 @@ class OrdersProductMore extends StatelessWidget {
     );
   }
 }
+/* 
+Need to attach with Order product 
+ */

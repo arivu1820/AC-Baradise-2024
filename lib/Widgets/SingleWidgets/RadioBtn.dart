@@ -34,7 +34,7 @@ class _RadioBtnState extends State<RadioBtn> {
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
-                  color: Selected ? lightBlueColor : Colors.transparent),
+                  color: Selected ? lightBlueColor : Colors.transparent ),
               width: 14,
               height: 14,
             ),

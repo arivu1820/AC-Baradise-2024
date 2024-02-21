@@ -4,7 +4,8 @@ import 'package:acbaradise_2024/Widgets/CombinedWidgets/CartProductContainer.dar
 import 'package:flutter/material.dart';
 
 class AMCInCart extends StatelessWidget {
-  const AMCInCart({Key? key}) : super(key: key);
+  final bool isQtyReq;
+  const AMCInCart({Key? key, required this.isQtyReq}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class AMCInCart extends StatelessWidget {
           ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) => CartAMCContainer(),
+            itemBuilder: (context, index) => CartAMCContainer(isQtyReq: isQtyReq,),
             itemCount: 3,
           ),
         ],

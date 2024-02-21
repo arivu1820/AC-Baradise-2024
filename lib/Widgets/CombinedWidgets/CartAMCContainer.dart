@@ -4,7 +4,8 @@ import 'package:acbaradise_2024/Widgets/SingleWidgets/OrderPriceWithout.dart';
 import 'package:flutter/material.dart';
 
 class CartAMCContainer extends StatelessWidget {
-  const CartAMCContainer({super.key});
+  final bool isQtyReq;
+  const CartAMCContainer({Key? key, required this.isQtyReq});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +14,10 @@ class CartAMCContainer extends StatelessWidget {
       height: 100,
       decoration: BoxDecoration(color: Colors.transparent),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          
           Expanded(
             child: Text(
-              "asdfasdfsafdsfasdfasdfasdfasdfasdfsdfasdfasdfasdfasdfsdafsdafasdfasdf",
+              "Service for - Cassette AC",
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
@@ -31,9 +30,7 @@ class CartAMCContainer extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-         
-             OrderPriceWithout(),
-   
+          isQtyReq ?   OrderPriceWithout():CartAddBtn()
         ],
       ),
     );

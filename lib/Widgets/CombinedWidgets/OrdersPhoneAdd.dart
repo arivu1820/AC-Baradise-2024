@@ -1,7 +1,4 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
-import 'package:acbaradise_2024/Widgets/CombinedWidgets/CartAMCContainer.dart';
-import 'package:acbaradise_2024/Widgets/CombinedWidgets/CartProductContainer.dart';
-import 'package:acbaradise_2024/Widgets/CombinedWidgets/OrdersCostContainer.dart';
 import 'package:flutter/material.dart';
 
 class OrdersPhoneAdd extends StatelessWidget {

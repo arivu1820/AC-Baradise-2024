@@ -1,10 +1,11 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
-import 'package:acbaradise_2024/Widgets/CombinedWidgets/CartProductContainer.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/CartServiceContainer.dart';
 import 'package:flutter/material.dart';
 
 class ServicesInCart extends StatelessWidget {
-  const ServicesInCart({Key? key}) : super(key: key);
+final bool isQtyReq;
+
+  const ServicesInCart({Key? key, required this.isQtyReq}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class ServicesInCart extends StatelessWidget {
           ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) => CartServiceContainer(),
+            itemBuilder: (context, index) => CartServiceContainer(isQtyReq: isQtyReq,),
             itemCount: 2,
           ),
         ],

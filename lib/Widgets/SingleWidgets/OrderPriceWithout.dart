@@ -9,7 +9,7 @@ class OrderPriceWithout extends StatelessWidget {
     final String name = "₹60000";
     return Column(
     
-      mainAxisAlignment: MainAxisAlignment.start,
+       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Text(

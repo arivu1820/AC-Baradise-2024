@@ -1,6 +1,5 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/BrandsContainerRow.dart';
-import 'package:acbaradise_2024/Widgets/SingleWidgets/BrandsContainer.dart';
 import 'package:flutter/material.dart';
 
 class PurchaseBrands extends StatelessWidget {

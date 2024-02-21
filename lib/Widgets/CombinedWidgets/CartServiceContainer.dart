@@ -5,11 +5,14 @@ import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 
 class CartServiceContainer extends StatelessWidget {
-  const CartServiceContainer({Key? key}) : super(key: key);
+  final bool isQtyReq;
+
+  const CartServiceContainer({Key? key, required this.isQtyReq }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    int itemCount = 2; // Change this to the actual count of items in your ListView
+    int itemCount =
+        2; // Change this to the actual count of items in your ListView
 
     return Container(
       margin: const EdgeInsets.only(top: 20),
@@ -52,7 +55,7 @@ class CartServiceContainer extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Text(
-                            "asdfasdfsafdsfasdfasdfasdfasdfasdfsdfasdfasdfasdfasdfsdafsdafasdfasdf",
+                            "Service for - Cassette AC",
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
@@ -65,7 +68,7 @@ class CartServiceContainer extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        OrderPriceWithout(),
+                        isQtyReq ? OrderPriceWithout() : CartAddBtn(),
                       ],
                     ),
                   ),

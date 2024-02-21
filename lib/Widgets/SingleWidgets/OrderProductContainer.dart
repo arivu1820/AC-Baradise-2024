@@ -1,12 +1,9 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
-import 'package:acbaradise_2024/Widgets/SingleWidgets/CardAddBtn.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/x.dart';
-import 'package:acbaradise_2024/Widgets/SingleWidgets/OrderPriceWithout.dart';
 import 'package:flutter/material.dart';
 
-class CartProductContainer extends StatelessWidget {
-  final bool isQtyReq;
-  const CartProductContainer({super.key, required this.isQtyReq});
+class OrderProductContainer extends StatelessWidget {
+  const OrderProductContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +18,14 @@ class CartProductContainer extends StatelessWidget {
             width: 120,
             height: 80,
             child: Image.asset(
-              "Assets/Icons/image_31.png",
+              "Assets/Icons/Google_icon.png",
               height: 70,
               width: 110,
             ),
           ),
           Expanded(
             child: Text(
-              "Service for - Cassette AC",
+              "asdfasdfsafdsfasdfasdfasdfasdfasdfsdfasdfasdfasdfasdfsdafsdafasdfasdf",
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
@@ -41,7 +38,7 @@ class CartProductContainer extends StatelessWidget {
           const SizedBox(
             width: 20,
           ),
-          isQtyReq ? OrderPriceWithout() : CartAddBtn(),
+          OrderPrice(),
         ],
       ),
     );

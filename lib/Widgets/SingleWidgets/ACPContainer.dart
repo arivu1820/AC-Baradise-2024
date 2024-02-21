@@ -10,7 +10,7 @@ class ACPContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: EdgeInsets.fromLTRB(20,10,20,0),
         padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
         height: 100,
         width: double.infinity,

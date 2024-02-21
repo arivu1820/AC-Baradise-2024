@@ -1,3 +1,4 @@
+import 'package:acbaradise_2024/Widgets/SingleWidgets/OrdersMore.dart';
 import 'package:flutter/material.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 
@@ -15,9 +16,10 @@ class _OrderPreceState extends State<OrderPrice> {
   Widget build(BuildContext context) {
     final String name = "₹60000";
     return Row(
-      
       children: [
-        SizedBox(height: 70,),
+        SizedBox(
+          height: 70,
+        ),
         IconButton(
           onPressed: () {
             setState(() {
@@ -57,12 +59,7 @@ class _OrderPreceState extends State<OrderPrice> {
             ),
           ],
         ),
-        
       ],
     );
   }
 }
-/*
-Todo 
-1. Need to adjust the arrow 
- */

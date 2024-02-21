@@ -11,13 +11,11 @@ class SubscriptionScheme extends StatefulWidget {
 
 class _SubscriptionSchemeState extends State<SubscriptionScheme> {
   bool _isExpanded = false;
-  
 
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(seconds: 0
-      ),
+      duration: Duration(seconds: 0),
       height: _isExpanded ? 665 : 100,
       width: double.infinity,
       margin: EdgeInsets.only(top: 10, left: 20, right: 20),
@@ -85,7 +83,6 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
                     setState(() {
                       _isExpanded = !_isExpanded;
                     });
-                    // Show message based on _isExpanded state
                   },
                   icon: Container(
                     width: 20,
@@ -99,15 +96,14 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
                 ),
               ],
             ),
-            // Conditionally display additional content based on _isExpanded
             if (_isExpanded)
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: Column(
-                  children: [
-                    MoreViewSubscriptionScheme(),
-                    MoreViewSubscriptionScheme()
-                  ],
+                  children: List.generate(
+                    3,
+                    (index) => MoreViewSubscriptionScheme(),
+                  ),
                 ),
               ),
           ],
@@ -116,3 +112,7 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
     );
   }
 }
+/*
+
+height: _isExpanded ? 665 : 100, need to sort out 
+ */
