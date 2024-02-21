@@ -1,3 +1,5 @@
+import 'package:acbaradise_2024/Screens/ACProductScreen.dart';
+import 'package:acbaradise_2024/Screens/ProductListScreen.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/HomePageSeeMoreContainer.dart';
 import 'package:flutter/material.dart';
@@ -55,12 +57,23 @@ class HomePageProductsList extends StatelessWidget {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Container(
-                                  width: 180,
-                                  height: 90,
-                                  padding: const EdgeInsets.only(top: 5),
-                                  child: Image.asset(
-                                      "Assets/Icons/Google_icon.png"),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                          ACProductScreen(ProductName: "VOLTAS 183V Vectra Platina 4 in 1 Convertible 1.5 Ton lelia VOLTAS 183V Vectra Platina 4 in 1 Convertible 1.5 Ton lelian"),
+                                              
+                                    ));
+                                  },
+                                  child: Container(
+                                    width: 180,
+                                    height: 90,
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Image.asset(
+                                        "Assets/Icons/Google_icon.png"),
+                                  ),
                                 ),
                                 const SizedBox(height: 10),
                                 const Text(
@@ -77,7 +90,16 @@ class HomePageProductsList extends StatelessWidget {
                             ),
                           ),
                         )
-                      : HomePageSeeMoreContainer();
+                      : GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ProductListScreen(
+                                      ProductName: ProductName)),
+                            );
+                          },
+                          child: HomePageSeeMoreContainer());
                 },
                 itemCount: 4,
               ),

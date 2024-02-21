@@ -9,7 +9,7 @@ class ProductCartBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     // final screenWidth = MediaQuery.of(context).size.width;
     // final isTextVisible = screenWidth > 200;
-    return InkWell(
+    return GestureDetector(
       onTap: () {},
       child: Container(
         height: 40,

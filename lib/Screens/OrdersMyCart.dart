@@ -6,6 +6,7 @@ import 'package:acbaradise_2024/Widgets/CombinedWidgets/OrdersMyCartProduct.dart
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/OrdersPhoneAdd.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/OrdersSummary.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/ProductsInCart.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/AppbarWithCart.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/ContinueToPaymentBtn.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CostContainer.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/SelectAnAddress.dart';
@@ -19,31 +20,9 @@ class OrdersMyCartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Orders",
-            style: const TextStyle(
-              fontFamily: "OxygenRegular",
-              fontSize: 20,
-              color: blackColor,
-            ),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: Dark2ligthblueLRgradient,
-            ),
-          ),
-          leading: IconButton(
-            icon: Image.asset(
-              'Assets/Icons/Back_Arrow_icon.png',
-              width: 15,
-              height: 15,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ),
+            backgroundColor: whiteColor,
+
+        appBar: AppbarWithCart(PageName: "My Orders"),
         body: Stack(
           children: [
             SingleChildScrollView(

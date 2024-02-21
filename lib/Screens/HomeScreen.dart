@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: whiteColor,
       appBar: AppBar(
         title: const Text(
           "AC Baradise",
@@ -22,6 +23,7 @@ class HomeScreen extends StatelessWidget {
             color: blackColor,
           ),
         ),
+        automaticallyImplyLeading: false,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: Dark2ligthblueLRgradient,
@@ -49,7 +51,7 @@ class HomeScreen extends StatelessWidget {
               height: 10,
             ),
             HomePageProductsList(ProductName: "Fast Moving"),
-             const SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],

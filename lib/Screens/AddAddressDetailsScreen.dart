@@ -1,4 +1,5 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/AppbarWithCart.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CommonBtn.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/TextContainer.dart';
 import 'package:flutter/material.dart';
@@ -14,31 +15,9 @@ class AddAddressDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Add Address Details",
-          style: TextStyle(
-            fontFamily: "OxygenRegular",
-            fontSize: 20,
-            color: blackColor,
-          ),
-        ),
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: Dark2ligthblueLRgradient,
-          ),
-        ),
-        leading: IconButton(
-          icon: Image.asset(
-            'Assets/Icons/Back_Arrow_icon.png',
-            width: 15,
-            height: 15,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+            backgroundColor: whiteColor,
+
+      appBar: AppbarWithCart(PageName: "Add Address Details"),
       body: SingleChildScrollView(
         child: Column(
           children: [
