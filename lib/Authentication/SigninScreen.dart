@@ -10,6 +10,7 @@ class SigninScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: whiteColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +27,9 @@ class SigninScreen extends StatelessWidget {
           ),
           SimplyExpand(),
           TCandPrivacy(),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           GoogleSigninBtn(),
           SizedBox(
             height: 30,

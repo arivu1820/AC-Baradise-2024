@@ -1,5 +1,6 @@
 import 'package:acbaradise_2024/Widgets/SingleWidgets/AnnualACCard.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/AnnualSchemeContainer.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/AppbarWithCart.dart';
 import 'package:flutter/material.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 
@@ -9,31 +10,8 @@ class AnnualContractScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Annual Contract",
-          style: TextStyle(
-            fontFamily: "OxygenRegular",
-            fontSize: 20,
-            color: blackColor,
-          ),
-        ),
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: Dark2ligthblueLRgradient,
-          ),
-        ),
-        leading: IconButton(
-          icon: Image.asset(
-            'Assets/Icons/Back_Arrow_icon.png',
-            width: 15,
-            height: 15,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
+      backgroundColor: whiteColor,
+      appBar: AppbarWithCart(PageName: "Annual Contract"),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -47,15 +25,24 @@ class AnnualContractScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  AnnualACCard(condition: true,name: "Split AC",),
+                  AnnualACCard(
+                    condition: true,
+                    name: "Split AC",
+                  ),
                   const SizedBox(
                     width: 10,
                   ),
-                  AnnualACCard(condition: false,name: "Window AC",),
+                  AnnualACCard(
+                    condition: false,
+                    name: "Window AC",
+                  ),
                   const SizedBox(
                     width: 10,
                   ),
-                  AnnualACCard(condition: false,name: "Cassette AC",),
+                  AnnualACCard(
+                    condition: false,
+                    name: "Cassette AC",
+                  ),
                 ],
               ),
             ),
