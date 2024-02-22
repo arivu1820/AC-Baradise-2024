@@ -26,7 +26,10 @@ class SigninScreen extends StatelessWidget {
             ),
           ),
           SimplyExpand(),
-          TCandPrivacy(),
+          FittedBox(fit: BoxFit.contain, child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: TCandPrivacy(),
+          )),
           SizedBox(
             height: 20,
           ),

@@ -28,7 +28,7 @@ class _AnnualContractScreenState extends State<AnnualContractScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppbarWithCart(PageName: "Annual Contract"),
+      appBar: AppbarWithCart(PageName: "Annual Contract",iscart: true,),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,6 +101,7 @@ class _AnnualContractScreenState extends State<AnnualContractScreen> {
             SplitACAnnualSchemeContainer(key: splitACKey),
             WindowACAnnualSchemeContainer(key: windowACKey),
             CassetteACAnnualSchemeContainer(key: cassetteACKey),
+            const SizedBox(height: 30,)
           ],
         ),
       ),

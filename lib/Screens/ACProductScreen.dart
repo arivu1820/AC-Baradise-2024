@@ -19,7 +19,7 @@ class ACProductScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppbarWithCart(PageName: ProductName),
+      appBar: AppbarWithCart(PageName: ProductName,iscart: true,),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,29 +53,31 @@ class ACProductScreen extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
-              child: Row(
-                children: [
-                  Text(
-                    "₹ 34,000",
-                    style: TextStyle(
-                      fontFamily: "LexendRegular",
-                      fontSize: 30,
-                      color: blackColor,
+              child: FittedBox(fit: BoxFit.contain,
+                child: Row(
+                  children: [
+                    Text(
+                      "₹ 34,000",
+                      style: TextStyle(
+                        fontFamily: "LexendRegular",
+                        fontSize: 30,
+                        color: blackColor,
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    "M.R.P ₹ 39,990",
-                    style: TextStyle(
-                      decoration: TextDecoration.lineThrough,
-                      fontFamily: "LexendRegular",
-                      fontSize: 18,
-                      color: black50Color,
+                    const SizedBox(
+                      width: 10,
                     ),
-                  )
-                ],
+                    Text(
+                      "M.R.P ₹ 39,990",
+                      style: TextStyle(
+                        decoration: TextDecoration.lineThrough,
+                        fontFamily: "LexendRegular",
+                        fontSize: 18,
+                        color: black50Color,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
 

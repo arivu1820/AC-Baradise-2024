@@ -35,7 +35,7 @@ class GoogleSigninBtn extends StatelessWidget {
               "Continue with Google",
               style: TextStyle(
                 fontSize: 16,
-                fontFamily: "OxygenBold",
+                fontFamily: "LexendMedium",
                 color: blackColor,
               ),
             ),

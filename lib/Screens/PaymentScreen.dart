@@ -14,28 +14,12 @@ class PaymentScreen extends StatelessWidget {
     return Scaffold(
             backgroundColor: whiteColor,
 
-      appBar: AppBar(
-          title: Text(
-            "Payment",
-            style: const TextStyle(
-              fontFamily: "OxygenRegular",
-              fontSize: 20,
-              color: blackColor,
-            ),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: Dark2ligthblueLRgradient,
-            ),
-          ),
-         
-        ),
-      body: Column(
+      appBar: AppbarWithCart(PageName: "Payment",iscart:false),      body: Column(
         children: [
           const CashonDelivery(),
           const PaymentMethod(),
           const SimplyExpand(),
-          CommonBtn(BtnName: "Confirm order to Proceed", function: () {}),
+          CommonBtn(BtnName: "Confirm order to Proceed", function: () {},isSelected:true),
         ],
       ),
     );

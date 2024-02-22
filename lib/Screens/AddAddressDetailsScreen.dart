@@ -17,22 +17,7 @@ class AddAddressDetailsScreen extends StatelessWidget {
     return Scaffold(
             backgroundColor: whiteColor,
 
-      appBar: AppBar(
-          title: Text(
-            "Add Address Details",
-            style: const TextStyle(
-              fontFamily: "LexendLight",
-              fontSize: 20,
-              color: blackColor,
-            ),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: Dark2ligthblueLRgradient,
-            ),
-          ),
-         
-        ),
+      appBar:  AppbarWithCart(PageName: "Add Address Detail",iscart: false),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -62,7 +47,7 @@ class AddAddressDetailsScreen extends StatelessWidget {
                     controller: field4Controller,
                     label: "Contact No.",
                   ),
-                  CommonBtn(BtnName: "Save Address", function: () {}),
+                  CommonBtn(BtnName: "Save Address", function: () {},isSelected: true,),
                 ],
               ),
             ),

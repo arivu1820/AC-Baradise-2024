@@ -35,7 +35,7 @@ class OrdersCostContainer extends StatelessWidget {
                             Text(
                               "Cooling Capacity $index",
                               style: TextStyle(
-                                fontFamily: "OxygenBold",
+                                fontFamily: "LexendRegular",
                                 fontSize: 14,
                                 color: blackColor,
                               ),
@@ -57,7 +57,7 @@ class OrdersCostContainer extends StatelessWidget {
                             Text(
                               "402$index",
                               style: TextStyle(
-                                fontFamily: "OxygenRegular",
+                                fontFamily: "LexendLight",
                                 fontSize: 14,
                                 color: blackColor,
                               ),
@@ -75,7 +75,7 @@ class OrdersCostContainer extends StatelessWidget {
             height: 10,
           ),
           
-              Container(height: 1,width: screenWidth - 60,color: lightGrayColor,)
+              Center(child: Container(height: 1,width: screenWidth - 60,color: lightGrayColor,))
              ,
           const SizedBox(
             height: 10,
@@ -84,9 +84,9 @@ class OrdersCostContainer extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  "TOTAL",
+                  "Total",
                   style: TextStyle(
-                    fontFamily: "OxygenBold",
+                    fontFamily: "LexendRegular",
                     fontSize: 16,
                     color: blackColor,
                   ),
@@ -95,8 +95,8 @@ class OrdersCostContainer extends StatelessWidget {
               Text(
                 "₹ 5,988",
                 style: TextStyle(
-                  fontFamily: "OxygenBold",
-                  fontSize: 20,
+                  fontFamily: "LexendRegular",
+                  fontSize: 16,
                   color: blackColor,
                 ),
               )

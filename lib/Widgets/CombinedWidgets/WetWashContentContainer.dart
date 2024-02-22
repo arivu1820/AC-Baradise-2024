@@ -2,11 +2,17 @@ import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/ServiceAddBtn.dart';
 import 'package:flutter/material.dart';
 
-class WetWashContentContainer extends StatelessWidget {
+class WetWashContentContainer extends StatefulWidget {
   final bool is360degree;
 
   WetWashContentContainer({required this.is360degree});
 
+  @override
+  State<WetWashContentContainer> createState() => _WetWashContentContainerState();
+}
+
+class _WetWashContentContainerState extends State<WetWashContentContainer> {
+  bool isSelected = true;
   @override
   Widget build(BuildContext context) {
     Widget _360degree() {
@@ -17,6 +23,22 @@ class WetWashContentContainer extends StatelessWidget {
           ),
           Row(
             children: [
+              GestureDetector(
+                onTap: () => setState(() {
+                  isSelected= !isSelected;
+                }),
+                child:isSelected? Container(
+                          height: 20,
+                          width: 20,
+                          decoration: BoxDecoration(
+                              color: whiteColor,
+                              borderRadius: BorderRadius.circular(5),
+                              border: Border.all(color: darkBlueColor)),
+                              child: Padding(
+                                padding: const EdgeInsets.all(3),
+                                child: Image.asset("Assets/Icons/checked.png",width: 20,height: 20,color: darkBlueColor,),
+                              ),
+                        ):
               Container(
                 height: 20,
                 width: 20,
@@ -25,7 +47,7 @@ class WetWashContentContainer extends StatelessWidget {
                   borderRadius: BorderRadius.circular(2),
                   border: Border.all(width: 1, color: darkBlueColor),
                 ),
-              ),
+              ),),
               const SizedBox(width: 10),
               Text(
                 "Wash in 360 degree",
@@ -91,7 +113,7 @@ class WetWashContentContainer extends StatelessWidget {
                         ),
                       ),
 
-                      if (is360degree) _360degree(),
+                      if (widget.is360degree) _360degree(),
                       
                        const SizedBox(
                         height: 10,

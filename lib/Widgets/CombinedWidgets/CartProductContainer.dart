@@ -25,6 +25,9 @@ class CartProductContainer extends StatelessWidget {
               width: 110,
             ),
           ),
+          SizedBox(
+            width: 10,
+          ),
           Expanded(
             child: Text(
               "Service for - Cassette AC",

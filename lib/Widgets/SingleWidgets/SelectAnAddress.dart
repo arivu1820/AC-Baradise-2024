@@ -41,10 +41,8 @@ class SelectAnAddress extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.map_sharp)),
-                const SizedBox(
-                  width: 10,
-                ),
+                IconButton(onPressed: () {}, icon: Image.asset("Assets/Icons/mapPoint.png", height: 20,width: 20,)),
+                
                 Expanded(
                   child: Text(
                     "21, dataasdfjalsdjflsdflsdjlfjsdaksdfjsadlf",

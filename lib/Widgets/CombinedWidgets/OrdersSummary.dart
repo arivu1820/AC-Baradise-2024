@@ -17,11 +17,12 @@ class OrdersSummary extends StatelessWidget {
           Text(
             "Order Summary",
             style: const TextStyle(
-              fontFamily: "OxygenBold",
+              fontFamily: "LexendRegular",
               fontSize: 18,
               color: blackColor,
             ),
           ),
+          const SizedBox(height: 20,),
           OrdersCostContainer()
         ],
       ),

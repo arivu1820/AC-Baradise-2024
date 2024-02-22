@@ -13,7 +13,7 @@ class TCandPrivacy extends StatelessWidget {
         RichText(
           text: TextSpan(
             style: const TextStyle(
-              fontFamily: "OxygenBold",
+              fontFamily: "LexendMedium",
               fontSize: 12,
               color: blackColor,
             ),

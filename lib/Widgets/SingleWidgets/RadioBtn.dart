@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 
-class RadioBtn extends StatefulWidget {
+class RadioBtn extends StatelessWidget {
   final bool isselected;
 
   RadioBtn({required this.isselected});
 
-  @override
-  State<RadioBtn> createState() => _RadioBtnState();
-}
-
-class _RadioBtnState extends State<RadioBtn> {
   @override
   Widget build(BuildContext context) {
     
@@ -28,7 +23,7 @@ class _RadioBtnState extends State<RadioBtn> {
         child: Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25),
-              color: widget.isselected ? lightBlueColor : Colors.transparent ),
+              color: isselected ? lightBlueColor : Colors.transparent ),
           width: 14,
           height: 14,
         ),

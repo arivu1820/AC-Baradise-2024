@@ -22,7 +22,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppbarWithCart(PageName: widget.ProductName),
+      appBar: AppbarWithCart(PageName: widget.ProductName,iscart: true),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

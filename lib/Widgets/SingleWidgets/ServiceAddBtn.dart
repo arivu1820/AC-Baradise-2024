@@ -46,11 +46,7 @@ class _ServiceAddBtnState extends State<ServiceAddBtn> {
                           count = --count;
                         });
                       },
-                      icon: Icon(
-                        Icons.remove,
-                        color: darkBlueColor,
-                        size: 20,
-                      )),
+                      icon:Image.asset("Assets/Icons/Minus.png",height: 12,width: 12,)),
                   Text(
                     count.toString(),
                     style: const TextStyle(
@@ -65,11 +61,7 @@ class _ServiceAddBtnState extends State<ServiceAddBtn> {
                           count = ++count;
                         });
                       },
-                      icon: Icon(
-                        Icons.add,
-                        color: darkBlueColor,
-                        size: 20,
-                      )),
+                      icon:Image.asset("Assets/Icons/Plus.png",height: 14,width: 14,)),
                   const SizedBox(
                     width: 10,
                   ),

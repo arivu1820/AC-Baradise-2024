@@ -1,6 +1,7 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/AMCInCart.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/ProductsInCart.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/AppbarWithCart.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/ContinueToPaymentBtn.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CostContainer.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/SelectAnAddress.dart';
@@ -14,22 +15,7 @@ class MyCartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "My Cart",
-            style: const TextStyle(
-              fontFamily: "LexendRegular",
-              fontSize: 18,
-              color: blackColor,
-            ),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: Dark2ligthblueLRgradient,
-            ),
-          ),
-         
-        ),
+        appBar:  AppbarWithCart(PageName: "My Cart",iscart: false),
         body: Stack(
           children: [
             SingleChildScrollView(

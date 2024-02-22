@@ -1,4 +1,5 @@
 import 'package:acbaradise_2024/Screens/AddAddressDetailsScreen.dart';
+import 'package:acbaradise_2024/Widgets/SingleWidgets/AppbarWithCart.dart';
 import 'package:flutter/material.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/AddressContainer.dart';
@@ -18,21 +19,7 @@ class _SelectAddressScreenState extends State<SelectAddressScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppBar(
-        title: const Text(
-          "Select Address",
-          style: TextStyle(
-            fontFamily: "LexendLight",
-            fontSize: 20,
-            color: blackColor,
-          ),
-        ),
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: Dark2ligthblueLRgradient,
-          ),
-        ),
-      ),
+      appBar:  AppbarWithCart(PageName: "Select Address",iscart: false),
       body: Column(
         children: [
           Expanded(
@@ -69,6 +56,7 @@ class _SelectAddressScreenState extends State<SelectAddressScreen> {
                 ),
               );
             },
+            isSelected: true,
           ),
         ],
       ),

@@ -31,7 +31,7 @@ class ACPContainer extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
                       fontSize: 14,
-                      fontFamily: "OxygenRegular",
+                      fontFamily: "LexendRegular",
                       color: black90Color,
                     ),
                   ),
@@ -47,7 +47,7 @@ class ACPContainer extends StatelessWidget {
                   "₹ 58,838.89",
                   style: const TextStyle(
                     fontSize: 14,
-                    fontFamily: "OxygenBold",
+                    fontFamily: "LexendRegular",
                     color: black90Color,
                   ),
                 ),
@@ -65,9 +65,11 @@ class ACPContainer extends StatelessWidget {
                     children: [
                       Text(
                         "Order #1C63FKKNN79684 ",
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontSize: 10,
-                          fontFamily: "OxygenRegular",
+                          fontFamily: "LexendLight",
                           color: black90Color,
                         ),
                       ),
@@ -75,13 +77,14 @@ class ACPContainer extends StatelessWidget {
                         "14 sep 2025",
                         style: const TextStyle(
                           fontSize: 10,
-                          fontFamily: "OxygenRegular",
+                          fontFamily: "LexendLight",
                           color: black90Color,
                         ),
                       ),
                     ],
                   ),
                 ),
+                const SizedBox(width: 20,),
                 Image.asset(
                   ifTrue
                       ? "Assets/Icons/Fulfilled.png"

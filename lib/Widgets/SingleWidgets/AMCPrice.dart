@@ -34,13 +34,14 @@ class AMCPrice extends StatelessWidget {
         const SizedBox(
           width: 5,
         ),
-        const IconTheme(
+        IconTheme(
           data: IconThemeData(
-            size: 20.0, // Set the size to 1 pixel
+            size: 20.0, // Set the size to 20 pixels
           ),
-          child: Icon(
-            Icons.arrow_forward_ios_rounded,
-            color: darkBlueColor,
+          child: Image.asset(
+            'Assets/Icons/ArrowRight.png', // Replace with the correct path to your image asset
+            width: 10.0, // Set the width to match the desired size
+            height: 20.0, // Set the height to match the desired size
           ),
         ),
         const SizedBox(

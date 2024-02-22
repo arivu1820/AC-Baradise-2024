@@ -12,7 +12,7 @@ class _CashonDeliveryState extends State<PaymentMethod> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(30),
+      padding: const EdgeInsets.only(left: 30,top: 30,bottom: 30,right:20),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(
@@ -48,10 +48,7 @@ class _CashonDeliveryState extends State<PaymentMethod> {
           ),
           IconButton(
               onPressed: () {},
-              icon: const Icon(
-                Icons.arrow_forward_ios_rounded,
-                color: lightBlueColor,
-              ))
+              icon: Image.asset("Assets/Icons/ArrowRight.png",height: 20,width: 10,))
         ],
       ),
     );

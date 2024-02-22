@@ -4,7 +4,8 @@ import 'package:acbaradise_2024/Theme/Colors.dart';
 class CommonBtn extends StatelessWidget {
   final String BtnName;
   final Function function;
-  CommonBtn({required this.BtnName, required this.function});
+  final bool isSelected;
+  CommonBtn({required this.BtnName, required this.function,required this.isSelected});
 
   @override
   Widget build(BuildContext context) {

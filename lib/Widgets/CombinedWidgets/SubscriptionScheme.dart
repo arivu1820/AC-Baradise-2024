@@ -11,24 +11,25 @@ class SubscriptionScheme extends StatefulWidget {
 
 class _SubscriptionSchemeState extends State<SubscriptionScheme> {
   bool _isExpanded = false;
+  bool _isClaim = true;
+  bool isService = true;
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: Duration(seconds: 0),
-      height: _isExpanded ? 665 : 100,
-      width: double.infinity,
-      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
-      padding: EdgeInsets.only(top: 20, left: 20, right: 20),
-      decoration: BoxDecoration(
-        color: whiteColor,
-        borderRadius: BorderRadius.circular(5),
-        border: Border.all(
-          color: lightBlue75Color,
-          width: 1,
+    return IntrinsicHeight(
+      child: AnimatedContainer(
+        duration: Duration(seconds: 0),
+        width: double.infinity,
+        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
+        padding: EdgeInsets.only(top: 20, left: 15, right: 15,bottom: 5),
+        decoration: BoxDecoration(
+          color: whiteColor,
+          borderRadius: BorderRadius.circular(5),
+          border: Border.all(
+            color: lightBlue75Color,
+            width: 1,
+          ),
         ),
-      ),
-      child: SingleChildScrollView(
         child: Column(
           children: [
             Row(
@@ -42,7 +43,7 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                        fontFamily: "OxygenRegular",
+                        fontFamily: "LexendLight",
                         fontSize: 18,
                         color: blackColor,
                       ),
@@ -56,7 +57,7 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
                 Text(
                   "Qty: 3",
                   style: TextStyle(
-                    fontFamily: "OxygenRegular",
+                    fontFamily: "LexendLight",
                     fontSize: 14,
                     color: blackColor,
                   ),
@@ -64,19 +65,22 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  "1 annual service not yet completed",
-                  style: TextStyle(
-                    color: leghtGreen,
-                    fontFamily: "OxygenRegular",
-                    fontSize: 14,
+                Expanded(
+                  child: Text(
+                    "1 annual service not yet completed",
+                    // textAlign: TextAlign.center,
+                    
+                    style: TextStyle(
+                      color: leghtGreen,
+                      fontFamily: "LexendLight",
+                      fontSize: 14,
+                    ),
                   ),
                 ),
-                Expanded(
-                  child: SizedBox(
-                    width: 10,
-                  ),
+                SizedBox(
+                  width: 10,
                 ),
                 IconButton(
                   onPressed: () {
@@ -101,8 +105,8 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
                 padding: const EdgeInsets.only(top: 10),
                 child: Column(
                   children: List.generate(
-                    3,
-                    (index) => MoreViewSubscriptionScheme(),
+                    4,
+                    (index) => MoreViewSubscriptionScheme(isService: true, ),
                   ),
                 ),
               ),
@@ -112,7 +116,3 @@ class _SubscriptionSchemeState extends State<SubscriptionScheme> {
     );
   }
 }
-/*
-
-height: _isExpanded ? 665 : 100, need to sort out 
- */

@@ -11,7 +11,7 @@ class OrdersPhoneAdd extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
+      margin: const EdgeInsets.only(left: 20, right: 20, top: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
@@ -19,7 +19,7 @@ class OrdersPhoneAdd extends StatelessWidget {
           Text(
             "Placed Address",
             style: const TextStyle(
-              fontFamily: "OxygenBold",
+              fontFamily: "LexendRegular",
               fontSize: 18,
               color: blackColor,
             ),
@@ -33,7 +33,7 @@ class OrdersPhoneAdd extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
               fontSize: 14,
-              fontFamily: "OxygenLight",
+              fontFamily: "LexendLight",
               color: blackColor,
             ),
           ),
@@ -43,11 +43,11 @@ class OrdersPhoneAdd extends StatelessWidget {
             
             style: const TextStyle(
               fontSize: 14,
-              fontFamily: "OxygenReglar",
+              fontFamily: "LexendRegular",
               color: blackColor,
             ),
           ),
-          SizedBox(height: 10,)
+          SizedBox(height: 30,)
         ],
       ),
     );

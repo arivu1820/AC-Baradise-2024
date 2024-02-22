@@ -89,6 +89,13 @@ flutter:
     - Assets/Icons/AboutUs_Icon.png
     - Assets/Icons/AMC_Icon.png
     - Assets/Icons/Orders_Icon.png
+    - Assets/Icons/checked.png
+    - Assets/Icons/ArrowRight.png
+    - Assets/Icons/BackArrow.png
+    - Assets/Icons/Plus.png
+    - Assets/Icons/Minus.png
+    - Assets/Icons/mapPoint.png
+    
 
   #   - images/a_dot_ham.jpeg
 

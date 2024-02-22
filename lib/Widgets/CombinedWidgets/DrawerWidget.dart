@@ -1,4 +1,7 @@
+import 'package:acbaradise_2024/Screens/AnnualContractScreen.dart';
 import 'package:acbaradise_2024/Screens/MyCartScreen.dart';
+import 'package:acbaradise_2024/Screens/OrdersScreen.dart';
+import 'package:acbaradise_2024/Screens/SubscriptionScreen.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/DrawerChildContioner.dart';
 import 'package:flutter/material.dart';
@@ -21,17 +24,19 @@ class DrawerWidget extends StatelessWidget {
             width: double.infinity,
             color: lightBlue50Color,
             child: Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,bottom: 20),
+              padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: whiteColor)
-
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: whiteColor)),
+                  const SizedBox(
+                    width: 20,
                   ),
-                  const SizedBox(width: 20,),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -61,23 +66,43 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
           ),
-          DrawerChildContioner(
-              name: "Orders", image: "Assets/Icons/Orders_Icon.png"),
           GestureDetector(
             onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => MyCartScreen(),
-              ),
-            );
-          },
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => OrdersScreen(),
+                ),
+              );
+            },
+            child: DrawerChildContioner(
+                name: "Orders", image: "Assets/Icons/Orders_Icon.png"),
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyCartScreen(),
+                ),
+              );
+            },
             child: DrawerChildContioner(
                 name: "My Cart", image: "Assets/Icons/My_Cart_Icon.png"),
           ),
-          DrawerChildContioner(
-              name: "Annual Contract Subscription",
-              image: "Assets/Icons/AMC_Icon.png"),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SubscriptionScreen(),
+                ),
+              );
+            },
+            child: DrawerChildContioner(
+                name: "Annual Contract Subscription",
+                image: "Assets/Icons/AMC_Icon.png"),
+          ),
           DrawerChildContioner(
               name: "About Us", image: "Assets/Icons/AboutUs_Icon.png"),
           DrawerChildContioner(

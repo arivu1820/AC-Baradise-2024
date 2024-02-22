@@ -12,11 +12,12 @@ class OrderPriceWithout extends StatelessWidget {
        mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
+        
         Text(
           name,
           style: const TextStyle(
             fontSize: 18,
-            fontFamily: "OxygenRegular",
+            fontFamily: "LexendLight",
             color: blackColor,
           ),
         ),
@@ -24,7 +25,7 @@ class OrderPriceWithout extends StatelessWidget {
           "Qty: 1",
           style: const TextStyle(
             fontSize: 10,
-            fontFamily: "OxygenRegular",
+            fontFamily: "LexendLight",
             color: black50Color,
           ),
         ),

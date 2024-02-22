@@ -20,7 +20,7 @@ class ServiceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppbarWithCart(PageName: "Service's"),
+      appBar: AppbarWithCart(PageName: "Service's",iscart: true),
       body: SingleChildScrollView(
         child: Column(
           children: [
