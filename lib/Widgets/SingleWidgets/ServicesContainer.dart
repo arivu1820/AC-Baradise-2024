@@ -26,7 +26,7 @@ class ServicesContainer extends StatelessWidget {
                 ServiceName,
                 style: TextStyle(
                   fontSize: 12,
-                  fontFamily: "OxygenBold",
+                  fontFamily: "LexendMedium",
                   color: blackColor,
                 ),
               ),

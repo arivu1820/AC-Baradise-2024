@@ -1,6 +1,7 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/AllServicesContainer.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/GeneralService.dart';
+import 'package:acbaradise_2024/Widgets/CombinedWidgets/HomePageProductsList.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/InstallUninstall.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/Repair.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/WetWash.dart';
@@ -28,18 +29,7 @@ class ServiceScreen extends StatelessWidget {
               height: 10,
             ),
             ServicesForYouText(),
-            GestureDetector(
-              onTap: () {
-                if (generalServiceKey.currentContext != null) {
-                  Scrollable.ensureVisible(
-                    generalServiceKey.currentContext!,
-                    alignment: 0.05,
-                    duration: Duration(milliseconds: 500),
-                    curve: Curves.easeInOut,
-                  );
-                }
-              },
-              child: AllServicesContainer(
+            AllServicesContainer(
                 callgeneralServiceKey: (key) {
                   onTapCallbackForService("General Service", key);
                 },
@@ -57,14 +47,17 @@ class ServiceScreen extends StatelessWidget {
                 repairKey: RepairKey,
                 installUninstallKey: InstallUninstallKey,
               ),
-            ),
+            
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
-            Divider(
-              thickness: 0.5,
-              color: lightGrayColor,
-            ),
+            Row(
+            children: [
+              const SizedBox(width: 50,),
+              Expanded(child: Divider(thickness: 0.5,color: lightGrayColor,)),
+              const SizedBox(width: 50,),
+            ],
+          ),
             const SizedBox(
               height: 10,
             ),
@@ -89,6 +82,10 @@ class ServiceScreen extends StatelessWidget {
             InstallUninstall(
               key: InstallUninstallKey,
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            HomePageProductsList(ProductName: "Stabilizer"),
             const SizedBox(
               height: 20,
             ),

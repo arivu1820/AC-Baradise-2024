@@ -98,7 +98,7 @@ class AllServicesContainer extends StatelessWidget {
                       child: Text(
                         "Annual Maintenance Contract",
                         style: TextStyle(
-                          fontFamily: "OxygenBold",
+                          fontFamily: "LexendMedium",
                           fontSize: 16,
                           color: blackColor,
                         ),

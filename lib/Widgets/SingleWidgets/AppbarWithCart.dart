@@ -15,8 +15,8 @@ class AppbarWithCart extends StatelessWidget implements PreferredSizeWidget {
       title: Text(
         PageName,
         style: const TextStyle(
-          fontFamily: "OxygenRegular",
-          fontSize: 20,
+          fontFamily: "LexendRegular",
+          fontSize: 18,
           color: blackColor,
         ),
       ),
@@ -27,24 +27,10 @@ class AppbarWithCart extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: [
         SizedBox(
-          width: screenWidth * 0.3,
+          width: screenWidth * 0.09,
         ),
-        const Text(
-          "My Cart",
-          style: TextStyle(
-            fontFamily: "LexendRegular",
-            fontSize: 12,
-            color: blackColor,
-          ),
-        ),
-        IconButton(
-          icon: Image.asset(
-            'Assets/Icons/My_Cart_Icon.png', // Replace with the correct path to your image asset
-            width: 25, // Adjust the width as needed
-            height: 20, // Adjust the height as needed
-            color: blackColor, // Set the color of your icon
-          ),
-          onPressed: () {
+        GestureDetector(
+          onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -52,6 +38,27 @@ class AppbarWithCart extends StatelessWidget implements PreferredSizeWidget {
               ),
             );
           },
+          child: Row(
+            children: [
+              const Text(
+                "My Cart",
+                style: TextStyle(
+                  fontFamily: "LexendRegular",
+                  fontSize: 12,
+                  color: blackColor,
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Image.asset(
+                'Assets/Icons/My_Cart_Icon.png', // Replace with the correct path to your image asset
+                width: 25, // Adjust the width as needed
+                height: 20, // Adjust the height as needed
+                color: blackColor, // Set the color of your icon
+              ),
+            ],
+          ),
         ),
         const SizedBox(
           width: 20,

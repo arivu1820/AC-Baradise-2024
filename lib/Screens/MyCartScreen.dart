@@ -18,8 +18,8 @@ class MyCartScreen extends StatelessWidget {
           title: Text(
             "My Cart",
             style: const TextStyle(
-              fontFamily: "OxygenRegular",
-              fontSize: 20,
+              fontFamily: "LexendRegular",
+              fontSize: 18,
               color: blackColor,
             ),
           ),
@@ -28,16 +28,7 @@ class MyCartScreen extends StatelessWidget {
               gradient: Dark2ligthblueLRgradient,
             ),
           ),
-          leading: IconButton(
-            icon: Image.asset(
-              'Assets/Icons/Back_Arrow_icon.png',
-              width: 15,
-              height: 15,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
+         
         ),
         body: Stack(
           children: [

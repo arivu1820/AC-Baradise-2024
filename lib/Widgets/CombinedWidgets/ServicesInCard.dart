@@ -11,7 +11,7 @@ final bool isQtyReq;
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      // margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
+      margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,

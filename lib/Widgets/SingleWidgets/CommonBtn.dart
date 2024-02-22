@@ -8,8 +8,10 @@ class CommonBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
+    return GestureDetector(
+      onTap: () {
+        function();
+      },
       child: Container(
         height: 60,
         width: double.infinity,
@@ -26,7 +28,7 @@ class CommonBtn extends StatelessWidget {
             textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 18,
-              fontFamily: "OxygenRegular",
+              fontFamily: "LexendLight",
               color: blackColor,
             ),
           ),

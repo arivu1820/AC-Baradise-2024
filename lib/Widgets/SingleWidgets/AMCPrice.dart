@@ -15,7 +15,7 @@ class AMCPrice extends StatelessWidget {
               name,
               style: const TextStyle(
                 fontSize: 18,
-                fontFamily: "OxygenBold",
+                fontFamily: "LexendMedium",
                 color: blackColor,
               ),
             ),
@@ -23,7 +23,7 @@ class AMCPrice extends StatelessWidget {
               name,
               style: const TextStyle(
                   fontSize: 14,
-                  fontFamily: "OxygenRegular",
+                  fontFamily: "LexendRegular",
                   color: black50Color,
                   decoration: TextDecoration.lineThrough,
                   decorationColor: black50Color, // Set the color to black

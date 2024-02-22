@@ -30,7 +30,7 @@ class SpecificationContent extends StatelessWidget {
                         Text(
                           "Cooling Capacity $index",
                           style: TextStyle(
-                            fontFamily: "OxygenBold",
+                            fontFamily: "LexendMedium",
                             fontSize: 12,
                             color: blackColor,
                           ),

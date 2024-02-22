@@ -9,7 +9,7 @@ class HomePageSeeMoreContainer extends StatelessWidget {
     return Container(
       height: 140,
       width: 70,
-      margin: const EdgeInsets.only(right: 20,left: 10,top: 5,bottom: 5),
+      margin: const EdgeInsets.only(right: 20, left: 10, top: 5, bottom: 5),
       decoration: BoxDecoration(
         color: whiteColor,
         border: Border.all(color: lightBlueColor, width: 1),
@@ -28,9 +28,8 @@ class HomePageSeeMoreContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 10,left: 15,right: 15),
+            padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
             child: Text(
-              
               "See more",
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -44,7 +43,7 @@ class HomePageSeeMoreContainer extends StatelessWidget {
             height: 10,
           ),
           Image.asset(
-            "Assets/Icons/Back_Arrow_icon.png",
+            "Assets/Icons/SeeMoreBtn.png",
             width: 20,
             height: 20,
           )

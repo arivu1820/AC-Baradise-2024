@@ -1,4 +1,11 @@
+import 'package:acbaradise_2024/Authentication/SigninScreen.dart';
+import 'package:acbaradise_2024/Screens/AnnualContractScreen.dart';
+import 'package:acbaradise_2024/Screens/HomeScreen.dart';
+import 'package:acbaradise_2024/Screens/MyCartScreen.dart';
+import 'package:acbaradise_2024/Screens/SelectAddressScreen.dart';
+import 'package:acbaradise_2024/Screens/ServiceScreen.dart';
 import 'package:acbaradise_2024/Temp/temp.dart';
+import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +22,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'AC Baradise',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: darkBlueColor),
         useMaterial3: true,
+        
       ),
-      home: Temp(),
+      home: SigninScreen(),
     );
   }
 }

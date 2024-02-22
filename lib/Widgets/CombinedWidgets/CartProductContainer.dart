@@ -1,6 +1,5 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CardAddBtn.dart';
-import 'package:acbaradise_2024/Widgets/SingleWidgets/x.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/OrderPriceWithout.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +31,7 @@ class CartProductContainer extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
-                fontFamily: "OxygenRegular",
+                fontFamily: "LexendLight",
                 fontSize: 15,
                 color: blackColor,
               ),

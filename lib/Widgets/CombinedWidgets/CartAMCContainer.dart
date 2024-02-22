@@ -21,7 +21,7 @@ class CartAMCContainer extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
-                fontFamily: "OxygenRegular",
+                fontFamily: "LexendLight",
                 fontSize: 15,
                 color: blackColor,
               ),

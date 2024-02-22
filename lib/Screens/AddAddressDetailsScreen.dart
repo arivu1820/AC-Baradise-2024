@@ -17,7 +17,22 @@ class AddAddressDetailsScreen extends StatelessWidget {
     return Scaffold(
             backgroundColor: whiteColor,
 
-      appBar: AppbarWithCart(PageName: "Add Address Details"),
+      appBar: AppBar(
+          title: Text(
+            "Add Address Details",
+            style: const TextStyle(
+              fontFamily: "LexendLight",
+              fontSize: 20,
+              color: blackColor,
+            ),
+          ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: Dark2ligthblueLRgradient,
+            ),
+          ),
+         
+        ),
       body: SingleChildScrollView(
         child: Column(
           children: [

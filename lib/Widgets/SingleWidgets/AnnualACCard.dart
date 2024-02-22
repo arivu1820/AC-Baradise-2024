@@ -4,6 +4,7 @@ import 'package:acbaradise_2024/Theme/Colors.dart';
 class AnnualACCard extends StatelessWidget {
   final bool condition;
   final String name;
+  
 
   AnnualACCard({required this.condition,required this.name});
  
@@ -31,16 +32,11 @@ class AnnualACCard extends StatelessWidget {
               ),
             ],
           ),
-          child: InkWell(
-            onTap: () {
-              // Handle tap event
-            },
-            child: Center(
-              child: SizedBox(
-                height: 80,
-                width: 80,
-                child: Image.asset("Assets/Icons/Google_icon.png"),
-              ),
+          child: Center(
+            child: SizedBox(
+              height: condition? 100: 80,
+              width: condition? 100: 80,
+              child: Image.asset("Assets/Icons/Google_icon.png"),
             ),
           ),
         ),

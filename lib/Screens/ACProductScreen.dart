@@ -1,3 +1,4 @@
+import 'package:acbaradise_2024/Widgets/CombinedWidgets/HomePageProductsList.dart';
 import 'package:flutter/material.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/AutoImageSlider.dart';
@@ -49,8 +50,52 @@ class ACProductScreen extends StatelessWidget {
             AutoImageSlider(),
             ProductContent(),
             ProductLargeCartBtn(),
+
+            Padding(
+              padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
+              child: Row(
+                children: [
+                  Text(
+                    "₹ 34,000",
+                    style: TextStyle(
+                      fontFamily: "LexendRegular",
+                      fontSize: 30,
+                      color: blackColor,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    "M.R.P ₹ 39,990",
+                    style: TextStyle(
+                      decoration: TextDecoration.lineThrough,
+                      fontFamily: "LexendRegular",
+                      fontSize: 18,
+                      color: black50Color,
+                    ),
+                  )
+                ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(top: 20, right: 20, left: 20),
+              child: Text(
+                "save ₹ 4,990",
+                style: TextStyle(
+                  fontFamily: "LexendRegular",
+                  fontSize: 20,
+                  color: darkBlueColor,
+                ),
+              ),
+            ),
             OverviewContent(),
             SpecificationContent(),
+            HomePageProductsList(ProductName: "Stabilizer"),
+            const SizedBox(
+              height: 20,
+            ),
             // Add the rest of your widgets here
           ],
         ),

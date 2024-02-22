@@ -14,7 +14,22 @@ class PaymentScreen extends StatelessWidget {
     return Scaffold(
             backgroundColor: whiteColor,
 
-      appBar: AppbarWithCart(PageName: "Payment"),
+      appBar: AppBar(
+          title: Text(
+            "Payment",
+            style: const TextStyle(
+              fontFamily: "OxygenRegular",
+              fontSize: 20,
+              color: blackColor,
+            ),
+          ),
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: Dark2ligthblueLRgradient,
+            ),
+          ),
+         
+        ),
       body: Column(
         children: [
           const CashonDelivery(),

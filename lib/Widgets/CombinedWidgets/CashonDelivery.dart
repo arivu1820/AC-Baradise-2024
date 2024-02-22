@@ -47,7 +47,7 @@ class _CashonDeliveryState extends State<CashonDelivery> {
               ),
             ),
           ),
-          RadioBtn(funtion: () {}),
+          RadioBtn(isselected: true,),
         ],
       ),
     );

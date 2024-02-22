@@ -35,7 +35,7 @@ class AnnualSchemeContainer extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      fontFamily: "OxygenBold",
+                      fontFamily: "LexendRegular",
                       fontSize: 18,
                       color: blackColor,
                     ),
@@ -68,19 +68,19 @@ class AnnualSchemeContainer extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 text: TextSpan(
                   style: const TextStyle(
-                    fontFamily: "OxygenBold",
+                    fontFamily: "LexendRegular",
                     fontSize: 12,
                     color: black60Color,
                   ),
                   children: [
                     const TextSpan(
                       text:
-                          "Voltas 183V Vectra Platina 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper. Platina 4 in 1 Conv",
+                          "Voltas 183V Vectra Platina 4 in 1 Convertible 1.5 Ton 3 Star Inverter Split AC with Anti Dust Filter (2023 Model, Copper. Platina 4 in 1 Conv"+"  ",
                     ),
                     TextSpan(
                       text: "More",
                       style: const TextStyle(
-                        fontWeight: FontWeight.bold,
+
                         color:
                             darkBlueColor, // Replace with your desired bold color
                       ),
@@ -94,7 +94,7 @@ class AnnualSchemeContainer extends StatelessWidget {
                 ),
               )),
               const SizedBox(
-                width: 10,
+                width: 40,
               ),
               const AMCPrice(),
             ],

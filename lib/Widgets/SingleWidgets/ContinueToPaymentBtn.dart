@@ -1,3 +1,4 @@
+import 'package:acbaradise_2024/Screens/PaymentScreen.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:flutter/material.dart';
 
@@ -8,11 +9,11 @@ class ContinueToPayment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-      border: Border(
-        top: BorderSide(width: 0.5, color: lightBlueColor),
+        border: Border(
+          top: BorderSide(width: 0.5, color: lightBlueColor),
+        ),
+        color: whiteColor,
       ),
-      color: whiteColor,
-    ),
       width: double.infinity,
       height: 100,
       child: Row(
@@ -30,7 +31,7 @@ class ContinueToPayment extends StatelessWidget {
                 "Pay",
                 style: const TextStyle(
                   fontSize: 18,
-                  fontFamily: "OxygenRegular",
+                  fontFamily: "LexendLight",
                   color: blackColor,
                 ),
               ),
@@ -38,15 +39,21 @@ class ContinueToPayment extends StatelessWidget {
                 "₹ 5646",
                 style: const TextStyle(
                   fontSize: 20,
-                  fontFamily: "OxygenBold",
+                  fontFamily: "LexendMedium",
                   color: blackColor,
                 ),
               )
             ],
           ),
           Expanded(
-            child: InkWell(
-              onTap: () {},
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PaymentScreen(),
+                    ));
+              },
               child: Container(
                 height: 60,
                 margin: const EdgeInsets.symmetric(
@@ -62,7 +69,7 @@ class ContinueToPayment extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       fontSize: 18,
-                      fontFamily: "OxygenRegular",
+                      fontFamily: "LexendLight",
                       color: blackColor,
                     ),
                   ),

@@ -1,4 +1,6 @@
+import 'package:acbaradise_2024/Screens/MyCartScreen.dart';
 import 'package:acbaradise_2024/Theme/Colors.dart';
+import 'package:acbaradise_2024/Widgets/CombinedWidgets/DrawerWidget.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/ExploreDivider.dart';
 import 'package:acbaradise_2024/Widgets/CombinedWidgets/HomePageProductsList.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/MyCartBanner.dart';
@@ -8,11 +10,13 @@ import 'package:acbaradise_2024/Widgets/SingleWidgets/ServiceAndAMCContainer.dar
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
+  HomeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: whiteColor,
       appBar: AppBar(
         title: const Text(
@@ -29,7 +33,20 @@ class HomeScreen extends StatelessWidget {
             gradient: Dark2ligthblueLRgradient,
           ),
         ),
+        actions: [
+          GestureDetector(
+            onTap: () => _scaffoldKey.currentState?.openEndDrawer(),
+            child: Image.asset(
+              'Assets/Icons/Profile_Icon.png', // Replace with the correct path to your image asset
+              width: 50, // Adjust the width as needed
+              height: 50, // Adjust the height as needed
+              color: whiteColor, // Set the color of your icon
+            ),
+          ),
+          const SizedBox(width: 10,),
+        ],
       ),
+      endDrawer: DrawerWidget(name: "Perarivalan",emailid: "arivu1820@gmail.com",),
       body: SingleChildScrollView(
         child: Column(
           children: [

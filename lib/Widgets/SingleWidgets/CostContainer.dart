@@ -46,7 +46,7 @@ class CostContainer extends StatelessWidget {
                             Text(
                               "Cooling Capacity $index",
                               style: TextStyle(
-                                fontFamily: "OxygenBold",
+                                fontFamily: "LexendMedium",
                                 fontSize: 14,
                                 color: blackColor,
                               ),
@@ -68,7 +68,7 @@ class CostContainer extends StatelessWidget {
                             Text(
                               "402$index",
                               style: TextStyle(
-                                fontFamily: "OxygenRegular",
+                                fontFamily: "LexendLight",
                                 fontSize: 14,
                                 color: blackColor,
                               ),
@@ -97,7 +97,7 @@ class CostContainer extends StatelessWidget {
                 child: Text(
                   "To Pay",
                   style: TextStyle(
-                    fontFamily: "OxygenRegular",
+                    fontFamily: "LexendLight",
                     fontSize: 14,
                     color: blackColor,
                   ),
@@ -106,7 +106,7 @@ class CostContainer extends StatelessWidget {
               Text(
                 "₹ 5,988",
                 style: TextStyle(
-                  fontFamily: "OxygenRegular",
+                  fontFamily: "LexendLight",
                   fontSize: 14,
                   color: blackColor,
                 ),

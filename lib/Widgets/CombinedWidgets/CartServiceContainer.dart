@@ -27,7 +27,7 @@ class CartServiceContainer extends StatelessWidget {
           Text(
             "General Service",
             style: const TextStyle(
-              fontFamily: "OxygenBold",
+              fontFamily: "LexendMedium",
               fontSize: 15,
               color: blackColor,
             ),
@@ -59,7 +59,7 @@ class CartServiceContainer extends StatelessWidget {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
-                              fontFamily: "OxygenRegular",
+                              fontFamily: "LexendLight",
                               fontSize: 15,
                               color: blackColor,
                             ),
