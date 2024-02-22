@@ -12,6 +12,7 @@ class OrderPriceWithout extends StatelessWidget {
        mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
+        
         Text(
           name,
           style: const TextStyle(

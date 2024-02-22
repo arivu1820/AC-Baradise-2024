@@ -1,6 +1,5 @@
 import 'package:acbaradise_2024/Theme/Colors.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/CardAddBtn.dart';
-import 'package:acbaradise_2024/Widgets/SingleWidgets/x.dart';
 import 'package:acbaradise_2024/Widgets/SingleWidgets/OrderPriceWithout.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +24,9 @@ class CartProductContainer extends StatelessWidget {
               height: 70,
               width: 110,
             ),
+          ),
+          SizedBox(
+            width: 10,
           ),
           Expanded(
             child: Text(

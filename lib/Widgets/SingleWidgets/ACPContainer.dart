@@ -65,6 +65,8 @@ class ACPContainer extends StatelessWidget {
                     children: [
                       Text(
                         "Order #1C63FKKNN79684 ",
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontSize: 10,
                           fontFamily: "OxygenRegular",
@@ -82,6 +84,7 @@ class ACPContainer extends StatelessWidget {
                     ],
                   ),
                 ),
+                const SizedBox(width: 20,),
                 Image.asset(
                   ifTrue
                       ? "Assets/Icons/Fulfilled.png"
